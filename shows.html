@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuwait Theater Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header>
+    <h1>Kuwait Theater Booking</h1>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <a href="index.html">Home</a> |
+        <a href="shows.html">Shows</a> |
+        <a href="booking.html">Booking</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="book.html">Book Now</a>
+    </nav>
+</header>
+
+    <hr>
+     <div class="hero">
+    <h2>Upcoming Theater Shows</h2>
+
+    <img src="theater.webp"
+     alt="Beautiful theater hall with stage and audience seating"
+     class="theater-image">
+
+    <p>
+        Welcome to Kuwait Theater Booking. Our platform allows users
+        to browse theater performances, check show schedules, and book
+        tickets online quickly and easily.
+    </p>
+
+    <!-- External Link -->
+    <p>
+        Learn more about culture and arts in Kuwait:
+        <a href="https://www.nccal.gov.kw" target="_blank">
+            Visit NCCAL
+        </a>
+    </p>
+
+    <hr>
+    </div>
+    <!-- Booking Form -->
+    <h2 id="book">Book Your Tickets</h2>
+
+    <form>
+
+        <label for="show">Select Show:</label><br>
+        <select id="show" required>
+            <option value="">Choose a Show</option>
+            <option>The Lion King</option>
+            <option>Aladdin</option>
+            <option>Kuwaiti Comedy Night</option>
+        </select><br><br>
+
+        <label for="tickets">Number of Tickets:</label><br>
+        <input type="number" id="tickets" min="1" required><br><br>
+
+        <label for="date">Show Date:</label><br>
+        <input type="date" id="date" required><br><br>
+
+        <input type="submit" value="Book Ticket">
+
+    </form>
+
+</body>
+</html>
